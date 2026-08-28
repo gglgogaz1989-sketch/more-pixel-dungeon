@@ -228,28 +228,28 @@ public class Generator {
 		WEP_T4	( 0, 0, MeleeWeapon.class),
 		WEP_T5	( 0, 0, MeleeWeapon.class),
 		
-		ARMOR	( 2, 1, Armor.class ),
+		ARMOR	( 3, 1, Armor.class ),
 		
-		MISSILE ( 1, 2, MissileWeapon.class ),
+		MISSILE ( 1, 7, MissileWeapon.class ),
 		MIS_T1  ( 0, 0, MissileWeapon.class ),
 		MIS_T2  ( 0, 0, MissileWeapon.class ),
 		MIS_T3  ( 0, 0, MissileWeapon.class ),
 		MIS_T4  ( 0, 0, MissileWeapon.class ),
 		MIS_T5  ( 0, 0, MissileWeapon.class ),
 		
-		WAND	( 1, 1, Wand.class ),
+		WAND	( 3, 3, Wand.class ),
 		RING	( 1, 0, Ring.class ),
-		ARTIFACT( 0, 1, Artifact.class),
+		ARTIFACT( 0, 2, Artifact.class),
 		
-		FOOD	( 0, 0, Food.class ),
+		FOOD	( 0, 5, Food.class ),
 		
-		POTION	( 8, 8, Potion.class ),
-		SEED	( 1, 1, Plant.Seed.class ),
+		POTION	( 10, 10, Potion.class ),
+		SEED	( 3, 3, Plant.Seed.class ),
 		
-		SCROLL	( 8, 8, Scroll.class ),
+		SCROLL	( 9, 9, Scroll.class ),
 		STONE   ( 1, 1, Runestone.class),
 		
-		GOLD	( 10, 10,   Gold.class );
+		GOLD	( 15, 15,   Gold.class );
 		
 		public Class<?>[] classes;
 
