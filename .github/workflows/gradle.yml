@@ -28,7 +28,7 @@ jobs:
         run: ./gradlew :android:assembleDebug
 
       - name: Build Desktop JAR
-        run: ./gradlew :desktop:dist
+        run: ./gradlew :desktop:jar
 
       - name: Upload Android APK Artifact
         uses: actions/upload-artifact@v4
