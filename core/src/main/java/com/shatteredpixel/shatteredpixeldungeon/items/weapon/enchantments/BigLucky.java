@@ -31,7 +31,7 @@ import com.shatteredpixel.shatteredpixeldungeon.sprites.ItemSprite.Glowing;
 import com.watabou.noosa.Visual;
 import com.watabou.utils.Random;
 
-public class Lucky extends Weapon.Enchantment {
+public class BigLucky extends Weapon.Enchantment {
 
 	private static ItemSprite.Glowing GREEN = new ItemSprite.Glowing( 0x00FF00 );
 	
