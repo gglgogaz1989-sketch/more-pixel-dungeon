@@ -40,22 +40,22 @@ public class SecretMazeRoom extends SecretRoom {
 	
 	@Override
 	public int minWidth() {
-		return 14;
+		return 30;
 	}
 	
 	@Override
 	public int minHeight() {
-		return 14;
+		return 30;
 	}
 	
 	@Override
 	public int maxWidth() {
-		return 18;
+		return 60;
 	}
 	
 	@Override
 	public int maxHeight() {
-		return 18;
+		return 60;
 	}
 	
 	@Override
