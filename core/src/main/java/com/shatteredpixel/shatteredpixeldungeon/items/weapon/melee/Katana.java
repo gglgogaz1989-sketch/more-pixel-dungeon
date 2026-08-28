@@ -32,20 +32,20 @@ public class Katana extends MeleeWeapon {
 	{
 		image = ItemSpriteSheet.KATANA;
 		hitSound = Assets.Sounds.HIT_SLASH;
-		hitSoundPitch = 1.1f;
+		hitSoundPitch = 1.2f;
 
 		tier = 4;
 	}
 
 	@Override
 	public int max(int lvl) {
-		return  4*(tier+1) +    //20 base, down from 25
+		return  5*(tier+1) +    //20 base, down from 25
 				lvl*(tier+1);   //scaling unchanged
 	}
 
 	@Override
 	public int defenseFactor( Char owner ) {
-		return 3;	//3 extra defence
+		return 2;	//3 extra defence
 	}
 
 	@Override
@@ -56,13 +56,13 @@ public class Katana extends MeleeWeapon {
 	@Override
 	protected void duelistAbility(Hero hero, Integer target) {
 		//+(8+2*lvl) damage, roughly +67% damage
-		int dmgBoost = augment.damageFactor(8 + Math.round(2f*buffedLvl()));
+		int dmgBoost = augment.damageFactor(10 + Math.round(3f*buffedLvl()));
 		Rapier.lungeAbility(hero, target, 1, dmgBoost, this);
 	}
 
 	@Override
 	public String abilityInfo() {
-		int dmgBoost = levelKnown ? 8 + Math.round(2f*buffedLvl()) : 8;
+		int dmgBoost = levelKnown ? 10 + Math.round(3f*buffedLvl()) : 10;
 		if (levelKnown){
 			return Messages.get(this, "ability_desc", augment.damageFactor(min()+dmgBoost), augment.damageFactor(max()+dmgBoost));
 		} else {
@@ -71,7 +71,7 @@ public class Katana extends MeleeWeapon {
 	}
 
 	public String upgradeAbilityStat(int level){
-		int dmgBoost = 8 + Math.round(2f*level);
+		int dmgBoost = 10 + Math.round(3f*level);
 		return augment.damageFactor(min(level)+dmgBoost) + "-" + augment.damageFactor(max(level)+dmgBoost);
 	}
 
