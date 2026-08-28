@@ -47,12 +47,12 @@ public class SecretLibraryRoom extends SecretRoom {
 	
 	@Override
 	public int minWidth() {
-		return Math.max(7, super.minWidth());
+		return Math.max(12, super.minWidth());
 	}
 	
 	@Override
 	public int minHeight() {
-		return Math.max(7, super.minHeight());
+		return Math.max(12, super.minHeight());
 	}
 	
 	private static HashMap<Class<? extends Scroll>, Float> scrollChances = new HashMap<>();
