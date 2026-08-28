@@ -34,12 +34,12 @@ public class CaveRoom extends PatchRoom {
 
 	@Override
 	public int minHeight() {
-		return Math.max(5, super.minHeight());
+		return Math.max(9, super.minHeight());
 	}
 
 	@Override
 	public int minWidth() {
-		return Math.max(5, super.minWidth());
+		return Math.max(9, super.minWidth());
 	}
 
 	@Override
@@ -48,7 +48,7 @@ public class CaveRoom extends PatchRoom {
 		// normal   ~30% to ~40%
 		// large    ~40% to ~50%
 		// giant    ~50% to ~60%
-		int scale = Math.min(width()*height(), 18*18);
+		int scale = Math.min(width()*height(), 30*18);
 		return 0.30f + scale/1024f;
 	}
 
